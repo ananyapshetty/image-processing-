@@ -58,6 +58,54 @@ cv2.destroyAllWindows()
 Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
+#4)Develop a program to convert the color image to grayscale and binary image
+import cv2
+image=cv2.imread("pic6.jpg")
+cv2.imshow("Original Image",image)
+gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.imshow("Gray Image",gray)
+cv2.waitKey(0)
+ret,binary = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY)
+cv2.imshow("binary Image",binary)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
+
+#5)Develop a program to convert the color images to different color spaces
+import cv2
+image=cv2.imread("pic6.jpg")
+cv2.imshow("Original Image",image)
+cv2.waitKey(0)
+gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.imshow("Gray Image",gray)
+cv2.waitKey(0)
+ycrcb = cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb)
+cv2.imshow(" YCrcb",ycrcb)
+cv2.waitKey(0)
+hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+cv2.imshow(" HSV",hsv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+Output:
+
+
+
+#6)Develop a program to create an image from 2D array(generate an array of random size)
+)creating 2d image
+import numpy as np 
+import cv2
+from PIL import Image as im 
+w,h=20,230
+i = np.zeros((h,w,3), dtype=np.uint8)
+i[0:256, 0:256]=[123,20,35]
+data = im.fromarray(i, 'RGB') 
+data.save('image.jpg') 
+data.show()
+Output:
+
+
 
 
 
