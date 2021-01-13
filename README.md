@@ -104,6 +104,7 @@ data = im.fromarray(i, 'RGB')
 data.save('image.jpg') 
 data.show()
 Output:
+![image](https://user-images.githubusercontent.com/72300138/104426484-da0fde00-5536-11eb-804b-8bbdaf3d3cd1.png)
 
 
 
