@@ -37,6 +37,27 @@ cv2.waitKey()
 Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425220-4689dd80-5535-11eb-95d9-e64bd5e2f68a.png)
 
+3)#Develop a program to find the sum and mean of a set of images.
+#a.Create  'n' number of images abd read them from the directory and perform the operations.
+sum and mean
+import cv2
+import glob 
+import numpy as np
+from PIL import Image
+path=glob.glob("E:\pics\*.jpg")
+for file in path:
+    print(file)
+    image=cv2.imread(file)
+    sum=image+sum
+mean=sum/20
+cv2.imshow("Sum",sum)
+cv2.waitKey(0)
+cv2.imshow("Mean",mean)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
 
 
 
