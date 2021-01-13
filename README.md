@@ -11,3 +11,8 @@ cv2.imshow('imagecolor1',imggry)
 cv2.imwrite('grayimg.jpg',imggry)
 cv2.waitKey()
 Output:
+
+
+
+![image](https://user-images.githubusercontent.com/72300138/104424343-1beb5500-5534-11eb-9b10-a95e6b93e8f5.png)
+
