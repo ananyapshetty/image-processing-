@@ -1,8 +1,11 @@
 # image-processing-
 Assignment 1
 #Develop a program to display grayscale image using read and write operation
+#import cv2 is used to import opencv.imshow() is for display.waitkey(n) is to wait for n miliseconds.When n=0,execution is paused until a key is pressed.
+#destroyAllWindow() function closes all the window
 #imread() function is used to read the file.
 #imwrite() function is used to save file in memory disk
+#COLOR_BGR2GRAY will covert color images into grayscale image
 import cv2
 imgclr=cv2.imread("imgred.jpg",1)
 imggry = cv2.cvtColor(imgclr, cv2.COLOR_BGR2GRAY)
@@ -15,7 +18,7 @@ Output:
 
 
 2)Develop a program to perform linear tranformation on an image:Scaling and rotation
-#SCALING
+#SCALING:In computer graphics and digital imaging, image scaling refers to the resizing of a digital image.Here we used resize function for scaling.
 import cv2 
 imgclr=cv2.imread("imgred.jpg") 
 res = cv2.resize(imgclr,(300,300),interpolation=cv2.INTER_CUBIC) 
@@ -25,7 +28,8 @@ cv2.waitKey()
 Output:
 ![image](https://user-images.githubusercontent.com/72300138/104424627-7ab0ce80-5534-11eb-8eb6-6e763a34dadc.png)
 
-#ROTATION
+#ROTATION:Rotate Image in Python using OpenCV To rotate an image, apply a matrix transformation. To create a matrix transformation, use the cv2.getRotationMatrix2D () method and pass the origin that we want the rotation to happen around. If we pass the origin (0, 0), then it will start transforming the matrix from the top-left corner.
+warpAffine() function mainly uses the transformation matrix to transform the images such as rotation affine,translation etc.
 import cv2 
 imgclr=cv2.imread("colorimg.jpg") 
 (row, col) = imgclr.shape[:2] 
@@ -39,6 +43,7 @@ Output:
 
 3)#Develop a program to find the sum and mean of a set of images.
 #a.Create  'n' number of images abd read them from the directory and perform the operations.
+#The glob() function returns an array of filenames or directories matching a specified pattern.
 sum and mean
 import cv2
 import glob 
@@ -63,6 +68,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
 #4)Develop a program to convert the color image to grayscale and binary image
+#COLOR_BGR2GRAY will covert color images into grayscale image.
 import cv2
 image=cv2.imread("pic6.jpg")
 cv2.imshow("Original Image",image)
