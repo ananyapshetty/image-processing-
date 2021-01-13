@@ -138,7 +138,7 @@ Output:
 
 
 
-## 7)Develop a program to find the neighbour of each elements in the matrix
+## 7)Develop a program to find the sum of neighbour of each elements in the matrix
 #The numpy.zeros() function returns a new array of given shape and type, with zeros.append () Syntax: list_name.append (‘value’) It takes only one argument. This function appends the incoming element to the end of the list as a single new element.
 
 import numpy as np
