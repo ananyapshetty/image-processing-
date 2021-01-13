@@ -1,4 +1,4 @@
-# image-processing-
+## image-processing-
 Assignment 1
 #Develop a program to display grayscale image using read and write operation
 #import cv2 is used to import opencv.imshow() is for display.waitkey(n) is to wait for n miliseconds.When n=0,execution is paused until a key is pressed.
@@ -17,7 +17,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/104424343-1beb5500-5534-11eb-9b10-a95e6b93e8f5.png)
 
 
-2)Develop a program to perform linear tranformation on an image:Scaling and rotation
+## 2)Develop a program to perform linear tranformation on an image:Scaling and rotation
 #SCALING:In computer graphics and digital imaging, image scaling refers to the resizing of a digital image.Here we used resize function for scaling.
 import cv2 
 imgclr=cv2.imread("imgred.jpg") 
@@ -41,7 +41,7 @@ cv2.waitKey()
 Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425220-4689dd80-5535-11eb-95d9-e64bd5e2f68a.png)
 
-3)#Develop a program to find the sum and mean of a set of images.
+## 3)#Develop a program to find the sum and mean of a set of images.
 #a.Create  'n' number of images abd read them from the directory and perform the operations.
 #The glob() function returns an array of filenames or directories matching a specified pattern.
 #sum-Adding all images.mean-Finding average of all the images.
@@ -67,7 +67,7 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
-#4)Develop a program to convert the color image to grayscale and binary image
+## 4)Develop a program to convert the color image to grayscale and binary image
 #COLOR_BGR2GRAY will covert color images into grayscale image.
 #Simple Thresholding The basic Thresholding technique is Binary Thresholding. For every pixel, the same threshold value is applied. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value.
 import cv2
@@ -86,7 +86,7 @@ Output:
 
 
 
-#5)Develop a program to convert the color images to different color spaces
+## 5)Develop a program to convert the color images to different color spaces
 #COLOR_BGR2GRAY will covert color images into grayscale image.
 #COLOR_BGR2YCrCb-Y represents Luminance or Luma component, Cb and Cr are Chroma components. Cb represents the blue-difference (difference of blue component and Luma Component). Cr represents the red-difference (difference of red component and Luma Component).
 #COLOR_BGR2HSV-H : Hue represents dominant wavelength.
@@ -111,7 +111,7 @@ Output:
 
 
 
-#6)Develop a program to create an image from 2D array(generate an array of random size)
+## 6)Develop a program to create an image from 2D array(generate an array of random size)
 )creating 2d image
 #Numpy zeros np.zeros () function in python is used to get an array of given shape and type filled with zeros. You can pass three parameters inside function np.zeros shape, dtype and order. Numpy zeros function returns an array of the given shape
 #im.fromarray converts array into image of height h,width w.
@@ -135,7 +135,7 @@ Output:
 
 
 
-7)Develop a program to find the neighbour of each elements in the matrix
+## 7)Develop a program to find the neighbour of each elements in the matrix
 #The numpy.zeros() function returns a new array of given shape and type, with zeros.append () Syntax: list_name.append (‘value’) It takes only one argument. This function appends the incoming element to the end of the list as a single new element.
 
 import numpy as np
