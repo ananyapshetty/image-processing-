@@ -29,6 +29,9 @@ cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
 Output:
+
+
+
 ![image](https://user-images.githubusercontent.com/72300138/104424627-7ab0ce80-5534-11eb-8eb6-6e763a34dadc.png)
 
 #ROTATION:Rotate Image in Python using OpenCV To rotate an image, apply a matrix transformation. To create a matrix transformation, use the cv2.getRotationMatrix2D () method and pass the origin that we want the rotation to happen around. If we pass the origin (0, 0), then it will start transforming the matrix from the top-left corner.
@@ -42,6 +45,9 @@ cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
 Output:
+
+
+
 ![image](https://user-images.githubusercontent.com/72300138/104425220-4689dd80-5535-11eb-95d9-e64bd5e2f68a.png)
 
 ## 3)#Develop a program to find the sum and mean of a set of images.
@@ -84,6 +90,9 @@ cv2.imshow("binary Image",binary)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 Output:
+
+
+
 ![image](https://user-images.githubusercontent.com/72300138/104426911-6e7a4080-5537-11eb-9dec-b62fe7473e23.png)
 
 
@@ -110,6 +119,8 @@ cv2.imshow(" HSV",hsv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 Output:
+
+
 ![image](https://user-images.githubusercontent.com/72300138/104426626-09bee600-5537-11eb-820f-f6aad3381e1b.png)
 
 
