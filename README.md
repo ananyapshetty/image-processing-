@@ -34,6 +34,9 @@ res = cv2.warpAffine(imgclr, M, (col,row))
 cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
+Output:
+![image](https://user-images.githubusercontent.com/72300138/104425220-4689dd80-5535-11eb-95d9-e64bd5e2f68a.png)
+
 
 
 
