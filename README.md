@@ -1,6 +1,6 @@
 ## image-processing-
 Assignment 1
-## Develop a program to display grayscale image using read and write operation
+## 1)Develop a program to display grayscale image using read and write operation
 #import cv2 is used to import opencv.imshow() is for display.waitkey(n) is to wait for n miliseconds.When n=0,execution is paused until a key is pressed.
 #destroyAllWindow() function closes all the window
 #imread() function is used to read the file.
