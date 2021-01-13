@@ -25,5 +25,7 @@ res = cv2.resize(imgclr,(300,300),interpolation=cv2.INTER_CUBIC)
 cv2.imshow('imagecolor',imgclr)
 cv2.imshow('imagecolor1',res)
 cv2.waitKey()
+Output:
+![image](https://user-images.githubusercontent.com/72300138/104424627-7ab0ce80-5534-11eb-8eb6-6e763a34dadc.png)
 
 
