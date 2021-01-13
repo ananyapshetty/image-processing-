@@ -69,6 +69,7 @@ Output:
 
 #4)Develop a program to convert the color image to grayscale and binary image
 #COLOR_BGR2GRAY will covert color images into grayscale image.
+#Simple Thresholding The basic Thresholding technique is Binary Thresholding. For every pixel, the same threshold value is applied. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value.
 import cv2
 image=cv2.imread("pic6.jpg")
 cv2.imshow("Original Image",image)
@@ -86,6 +87,7 @@ Output:
 
 
 #5)Develop a program to convert the color images to different color spaces
+#COLOR_BGR2GRAY will covert color images into grayscale image.
 import cv2
 image=cv2.imread("pic6.jpg")
 cv2.imshow("Original Image",image)
