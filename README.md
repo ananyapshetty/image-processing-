@@ -55,6 +55,8 @@ cv2.waitKey(0)
 cv2.imshow("Mean",mean)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+Output:
+![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
 
 
