@@ -56,6 +56,10 @@ cv2.imshow("Mean",mean)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 Output:
+
+
+
+
 ![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
 #4)Develop a program to convert the color image to grayscale and binary image
@@ -69,6 +73,8 @@ ret,binary = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY)
 cv2.imshow("binary Image",binary)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+Output:
+![image](https://user-images.githubusercontent.com/72300138/104426911-6e7a4080-5537-11eb-9dec-b62fe7473e23.png)
 
 
 
