@@ -89,6 +89,7 @@ cv2.imshow(" HSV",hsv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 Output:
+![image](https://user-images.githubusercontent.com/72300138/104426626-09bee600-5537-11eb-820f-f6aad3381e1b.png)
 
 
 
