@@ -113,8 +113,8 @@ Output:
 
 #6)Develop a program to create an image from 2D array(generate an array of random size)
 )creating 2d image
-#zeros((r,c)) - It will return an array with all elements zeros with r number of rows and c number of columns.
-
+#Numpy zeros np.zeros () function in python is used to get an array of given shape and type filled with zeros. You can pass three parameters inside function np.zeros shape, dtype and order. Numpy zeros function returns an array of the given shape
+#im.fromarray converts array into image of height h,width w.
 import numpy as np 
 import cv2
 from PIL import Image as im 
