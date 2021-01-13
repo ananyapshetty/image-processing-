@@ -44,7 +44,7 @@ Output:
 3)#Develop a program to find the sum and mean of a set of images.
 #a.Create  'n' number of images abd read them from the directory and perform the operations.
 #The glob() function returns an array of filenames or directories matching a specified pattern.
-sum and mean
+#sum-Adding all images.mean-Finding average of all the images.
 import cv2
 import glob 
 import numpy as np
@@ -88,6 +88,10 @@ Output:
 
 #5)Develop a program to convert the color images to different color spaces
 #COLOR_BGR2GRAY will covert color images into grayscale image.
+#COLOR_BGR2YCrCb-Y represents Luminance or Luma component, Cb and Cr are Chroma components. Cb represents the blue-difference (difference of blue component and Luma Component). Cr represents the red-difference (difference of red component and Luma Component).
+#COLOR_BGR2HSV-H : Hue represents dominant wavelength.
+S : Saturation represents shades of color.
+V : Value represents Intensity.
 import cv2
 image=cv2.imread("pic6.jpg")
 cv2.imshow("Original Image",image)
@@ -109,6 +113,8 @@ Output:
 
 #6)Develop a program to create an image from 2D array(generate an array of random size)
 )creating 2d image
+#zeros((r,c)) - It will return an array with all elements zeros with r number of rows and c number of columns.
+
 import numpy as np 
 import cv2
 from PIL import Image as im 
