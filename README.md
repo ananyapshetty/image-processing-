@@ -183,7 +183,7 @@ Summed neighbors matrix:
  [23. 40. 27.]
  [17. 31. 19.]]
  
- ##8)Write a c++ program to perform operator overloading 
+ ## 8)Write a c++ program to perform operator overloading 
  #include <iostream>
 using namespace std;
 class matrix
