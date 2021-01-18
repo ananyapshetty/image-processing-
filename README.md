@@ -51,7 +51,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425220-4689dd80-5535-11eb-95d9-e64bd5e2f68a.png)
 
 ## 3)#Develop a program to find the sum and mean of a set of images.
-#a.Create  'n' number of images abd read them from the directory and perform the operations.
+#a.Create  'n' number of images and read them from the directory and perform the operations.
 #The glob() function returns an array of filenames or directories matching a specified pattern.
 #sum-Adding all images.mean-Finding average of all the images.
 import cv2
@@ -77,7 +77,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/104425703-d62f8c00-5535-11eb-94ce-498b71c830a5.png)
 
 ## 4)Develop a program to convert the color image to grayscale and binary image
-#COLOR_BGR2GRAY will covert color images into grayscale image.
+#COLOR_BGR2GRAY will convert color images into grayscale image.
 #Simple Thresholding The basic Thresholding technique is Binary Thresholding. For every pixel, the same threshold value is applied. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value.
 import cv2
 image=cv2.imread("pic6.jpg")
