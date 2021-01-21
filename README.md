@@ -432,7 +432,7 @@ Output:
 ## Histogram of an image
 ## a)Through my code
 ## b)Through built in function
-## c)To verify whether a) and b) are one and other the same
+## c)To verify whether a) and b) are same
 #a)
 import cv2
 import numpy as np
