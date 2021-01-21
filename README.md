@@ -126,7 +126,7 @@ Output:
 
 
 ## 6)Develop a program to create an image from 2D array(generate an array of random size)
-)creating 2d image
+#creating 2d image
 #Numpy zeros np.zeros () function in python is used to get an array of given shape and type filled with zeros. You can pass three parameters inside function np.zeros shape, dtype and order. Numpy zeros function returns an array of the given shape
 #im.fromarray converts array into image of height h,width w.
 import numpy as np 
@@ -342,6 +342,15 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72300138/105324512-6007d680-5b80-11eb-8ccd-a1fac8df42f8.png)
 ![image](https://user-images.githubusercontent.com/72300138/105324581-74e46a00-5b80-11eb-9855-964a09504a6b.png)
+
+#Contrast of an image
+#Python Imaging Library (PIL) is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.To load an image from a file, use the open() function in the Image module.Image Enhancer uses contrast enhancement techniques to optimize the photo color. show() function is to display.
+from PIL import Image, ImageEnhance
+img = Image.open("pic1.jpeg")
+img.show()
+img=ImageEnhance.Color(img)
+img.enhance(2.0).show()
+Output:
 
 
 
