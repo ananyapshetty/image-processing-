@@ -357,6 +357,34 @@ Output:
 
 
 
+#Threshold transformation 
+#cv2.cvtColor() method is used to convert an image from one color space to another.COLOR_BGR2GRAY- convert between RGB/BGR and grayscale.
+#The function cv.threshold is used to apply the thresholding. The first argument is the source image, which should be a grayscale image. The second argument is the threshold value which is used to classify the pixel values. The third argument is the maximum value which is assigned to pixel values exceeding the threshold. OpenCV provides different types of thresholding which is given by the fourth parameter of the function. Basic thresholding as described above is done by using the type cv.THRESH_BINARY. All simple thresholding types are:
+cv2.THRESH_BINARY: If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).
+cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.
+cv.THRESH_TRUNC: If pixel intensity value is greater than threshold, it is truncated to the threshold. The pixel values are set to be the same as the threshold. All other values remain the same.
+ccv.THRESH_TOZERO: Pixel intensity is set to 0, for all the pixels intensity, less than the threshold value.
+cv.THRESH_TOZERO_INV: Inverted or Opposite case of cv2.THRESH_TOZERO.
+
+import cv2  
+import numpy as np 
+image = cv2.imread('pic1.jpeg') 
+img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY) 
+ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV) 
+ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC) 
+ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO) 
+ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV) 
+cv2.imshow('Binary Threshold', thresh1) 
+cv2.imshow('Binary Threshold Inverted', thresh2) 
+cv2.imshow('Truncated Threshold', thresh3) 
+cv2.imshow('Set to 0', thresh4) 
+cv2.imshow('Set to 0 Inverted', thresh5) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+Output:
+
+
 
 
 
