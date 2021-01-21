@@ -391,6 +391,21 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/105329465-0a362d00-5b86-11eb-8eac-7cf9cdc60bc8.png)
 ![image](https://user-images.githubusercontent.com/72300138/105329511-15895880-5b86-11eb-8413-732a710a5991.png)
 
+## Develop a program for power law(gamma) transformation
+#import cv2 is used to import opencv.A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.#imread() function is to read image.imshow() is for display.waitkey(n) is to wait for n miliseconds.When n=0,execution is paused until a key is pressed.destroyAllWindow() function closes all the windows. 
+
+import cv2 
+import numpy as np 
+img = cv2.imread('pic1.jpeg')
+cv2.imshow("Original",img)
+cv2.waitKey(0)
+for gamma in [0.1, 0.5, 1.2, 2.2]:  
+    gamma_corrected = np.array(255*(img / 255) ** gamma, dtype = 'uint8')  
+    cv2.imshow('gamma_transformed '+str(gamma)+'.jpg', gamma_corrected) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+Output:
+
 
 
 
