@@ -459,6 +459,8 @@ plt.title('Histogram of the original image')
 Output:
 
 ![image](https://user-images.githubusercontent.com/72300138/105340416-b1b95c80-5b92-11eb-9048-e26c725ef111.png)
+
+
 #b)
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
@@ -467,6 +469,8 @@ image = cv2.imread('pic1.jpeg')
 x=image[:,:,0]
 plt.hist(x)
 Output:
+
+
 ![image](https://user-images.githubusercontent.com/72300138/105340600-f218da80-5b92-11eb-9f56-03dc538d6ff9.png)
 
 
