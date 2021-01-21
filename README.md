@@ -183,7 +183,7 @@ Summed neighbors matrix:
  [23. 40. 27.]
  [17. 31. 19.]]
  
- ## 8)Develop a program to find the neighbour of elements in the matrix
+ ## 8)Develop a program to find the neighbours of element in the matrix
  #A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.We must specify row and column of element in neighbour function.
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
@@ -429,6 +429,43 @@ Output:
 ![image](https://user-images.githubusercontent.com/72300138/105332152-24bdd580-5b89-11eb-8869-87628df61e8b.png)
 
 
+## Histogram of an image
+## a)Through my code
+## b)Through built in function
+## c)To verify whether a) and b) are one and other the same
+#a)
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt    
+img = cv2.imread('pic1.jpeg', 0)
+def hist_plot(img):
+    count =[]  
+    r = []
+    for k in range(0, 256):
+        r.append(k)
+        count1 = 0  
+        for i in range(m):
+            for j in range(n):
+                if img[i, j]== k:
+                    count1+= 1
+        count.append(count1)      
+    return (r, count)  
+m, n = img.shape
+r1, count1 = hist_plot(img)
+plt.stem(r1, count1)
+plt.xlabel('intensity value')
+plt.ylabel('number of pixels')
+plt.title('Histogram of the original image') 
+Output:
+
+
+#b)
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+import numpy as np
+image = cv2.imread('pic1.jpeg') 
+x=image[:,:,0]
+plt.hist(x)
 
 
 
