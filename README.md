@@ -336,6 +336,12 @@ neg=255-img
 cv2.imshow("negetive",neg)
 cv2.waitKey(0);
 cv2.destroyAllWindows()
+Output:
+
+
+
+![image](https://user-images.githubusercontent.com/72300138/105324512-6007d680-5b80-11eb-8ccd-a1fac8df42f8.png)
+![image](https://user-images.githubusercontent.com/72300138/105324581-74e46a00-5b80-11eb-9855-964a09504a6b.png)
 
 
 
