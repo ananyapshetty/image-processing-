@@ -183,7 +183,23 @@ Summed neighbors matrix:
  [23. 40. 27.]
  [17. 31. 19.]]
  
- ## 8)Write a c++ program to perform operator overloading 
+ ## 8)Develop a program to find the neighbour of elements in the matrix
+ #A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers.We must specify row and column of element in neighbour function.
+import numpy as np
+ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
+print("initial_array : ", str(ini_array));
+def neighbors(radius, rowNumber, columnNumber):
+    return[[ini_array[i][j] if i >= 0 and i < len(ini_array) and j >= 0 and j < len(ini_array[0]) else 0
+            for j in range(columnNumber-1-radius, columnNumber+radius)]
+           for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 2)
+Output:
+initial_array :  [[1 2 5 3]
+                 [4 5 4 7]
+                 [9 6 1 0]]
+[[1, 2, 5], [4, 5, 4], [9, 6, 1]]
+ 
+ ## 9)Write a c++ program to perform operator overloading 
  #include <iostream>
 using namespace std;
 class matrix
