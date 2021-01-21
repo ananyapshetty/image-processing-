@@ -396,7 +396,7 @@ Output:
 
 import cv2 
 import numpy as np 
-img = cv2.imread('pic1.jpeg')
+img = cv2.imread('pic2.jpeg')
 cv2.imshow("Original",img)
 cv2.waitKey(0)
 for gamma in [0.1, 0.5, 1.2, 2.2]:  
