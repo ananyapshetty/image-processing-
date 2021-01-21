@@ -324,6 +324,19 @@ multiplication is
  53     40
 
 
+## Develop a program to implement negative tranformation of an image
+#imread() function is to read image.imshow() is for display.waitkey(n) is to wait for n miliseconds.When n=0,execution is paused until a key is pressed.
+#destroyAllWindow() function closes all the windows.import cv2 is used to import opencv.
+#The negative transformation is given by s=L-1-r.Where L=Maximum value(256),r=image pixel.
+import cv2 
+img = cv2.imread('pic1.jpeg') 
+cv2.imshow("Original",img)
+cv2.waitKey(0)
+neg=255-img
+cv2.imshow("negetive",neg)
+cv2.waitKey(0);
+cv2.destroyAllWindows()
+
 
 
 
